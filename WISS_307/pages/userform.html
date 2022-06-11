@@ -4,11 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Newsletter</title>
+        <!--User Page-->
+    <title>User</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/sign_body.css">
 
+
+    <!--styling with red for wrong, and green for valid.-->
 <style>
     label.error{color:#f23c3c}
     label.valid{color:#91d64d;}
@@ -19,7 +22,7 @@
 </head>
 <body>
     
-
+    <!--Navbar-->
     <nav class="navbar sticky-top navbar-expand-lg navbar-light" style="background-color:rgb(234, 238, 241)">
         <a class="navbar-brand" href="../index.html">
           <img src="../images/ghibli_nav.svg.png" width="60" height="35" class="d-inline-block align-top" alt="">
@@ -47,16 +50,16 @@
       </nav>
 
 
-
-      <div h1 class="text-center">
+      <!--text-align center-->
+      <div style="text-align: center;">
       <h1>Sign Up</h1>
       <p>Please fill out the form</p>
       <p>Forms with (*) require input</p>
         </div>
 
 
-        <form id="userform" name="userform" action="../thx.html" method="post">
-            <fieldset id="user"> <!--Information about the user-->
+        <form id="userform" name="userform" action="thx.html" method="post">
+            <fieldset id="user"> </fieldset><!--Information about the user--> 
 
                 <div class="form-group">
                     <label for="firstname">Firstname(*)</label>
@@ -85,8 +88,13 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="email">e-mail(*)</label>
+                    <label for="email">E-mail(*)</label>
                     <input class="form-control" type="text" name="email" id="email">
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone-number</label>
+                    <input class="form-control" type="text" name="phone" id="phone">
                 </div>
 
                 <div class="form-group">
@@ -115,18 +123,16 @@
 
                 <div class="form-group">
                     <label class="checkbox-inline" for="agb">I have read and agree to the </label>
-                    <a href="#">terms of Service</a>
+                    <a href="term.html">terms of Service</a>
                       <input name="agb" id="agb" value="" type="checkbox">
-                      </label>
                   </div>
 
                   <div class="form-group">
                     <label class="checkbox-inline" for="newsletter">I would like to receive news, surveys and special offers from Studio Ghibli</label>
                       <input name="newsletter" id="newsletter" value="" type="checkbox">
-                      </label>
                   </div>
 
-                
+                <!--Send Button-->
                   <div class="form-group">
                       <button type="submit" class="btn btn-primary">Send</button>
                   </div>
@@ -142,9 +148,7 @@
 
 
 
-        </fieldset>
-
-        </div>
+        <!--Scripts-->
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
         <script src="../js/jquery-3.1.1.js"></script>
