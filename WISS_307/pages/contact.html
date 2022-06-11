@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
+    <!--Contact site-->
+    <title>Contact</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/contact_body.css">
 
@@ -14,7 +15,7 @@
 
 <body>
 
-
+    <!--Navbar-->
     <nav class="navbar sticky-top navbar-expand-lg navbar-light" style="background-color:rgb(234, 238, 241)">
         <a class="navbar-brand" href="../index.html">
           <img src="../images/ghibli_nav.svg.png" width="60" height="35" class="d-inline-block align-top" alt="">
@@ -46,30 +47,31 @@
 
 
 
+      <!--after sending it will lead to thx.html-->
+      <form id="contactform" name="contactform" action="thx.html" method="post">
 
-      <form id="contactform" name="contactform" action="../thx.html" method="post">
 
-
-
+        <!--Paragraph-->
     <div class="container" id="info-container">
         <div class="row">
             <div class="col-md-12">
-                <h2 class="text-center text-info">Contact me</h2>
+                <h2 class="text-center text-info">Contact</h2>
             </div>
             <div class="col-12 col-sm-6 col-md-6" id="contact-box">
-                <p id="contact-text">Do you need any help or have some feedback on how I can improve the Website, fill out this Form and Contact me.</p>
+                <p id="contact-text">Do you need any help or have some feedback on how I can improve the Website, fill out this form and contact me.</p>
                 <div class="info-box"><i class="fa fa-map-marker my-info-icons"></i><span class="text-uppercase text-info">Address: </span><span>Hohlstrasse 535, 8048</span></div>
                 <div class="info-box"><i class="fa fa-envelope my-info-icons"></i><span class="text-uppercase text-info">Email: </span><span>natthaphon.phonyiam@wiss-edu.ch </span></div>
                 <div class="info-box"><i class="fa fa-phone-square my-info-icons"></i><span class="text-uppercase text-info">Phone: </span><span>+058 404 42 01 </span></div>
             </div>
+            <!--User bar with firstname, lastname, phone number, email adress and messages-->
             <div class="col-12 col-sm-6 col-md-6 site-form">
-                <form id="my-form">
+                
                     <div class="form-group mb-3"><label class="form-label visually-hidden" for="firstname">First Name</label><input class="form-control" type="text" id="firstname" name="firstname" placeholder="First Name" autofocus=""></div>
                     <div class="form-group mb-3"><label class="form-label visually-hidden" for="lastname">Last Name</label><input class="form-control" type="text" id="lastname" name="lastname" placeholder="Last Name"></div>
                     <div class="form-group mb-3"><label class="form-label visually-hidden" for="phonenumber">Phone Number</label><input class="form-control" type="tel" id="phonenumber" name="phonenumber" required="" placeholder="Phone"></div>
                     <div class="form-group mb-3"><label class="form-label visually-hidden" for="email">Email Address</label><input class="form-control" type="text" id="email" name="email" required="" placeholder="Email"></div>
-                    <div class="form-group mb-3"><label class="form-label visually-hidden" for="messages">Last Name</label><textarea class="form-control" name="messages" required="" placeholder="Message" rows="8"></textarea></div><button class="btn btn-light btn-lg" id="form-btn" type="submit">SEND </button>
-                </form>
+                    <div class="form-group mb-3"><label class="form-label visually-hidden" for="messages">Last Name</label><textarea class="form-control" name="messages" id="messages" required="" placeholder="Message" rows="8"></textarea></div><button class="btn btn-light btn-lg" id="form-btn" type="submit">SEND </button>
+                
             </div>
         </div>
     </div>

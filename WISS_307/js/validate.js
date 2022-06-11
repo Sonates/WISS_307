@@ -20,7 +20,12 @@ $(document).ready(function(){
         {	return this.optional(element) || /^[a-zA-Z0-9 .,]+$/.test(value);
         }, 	"Please enter a valid street and number")
         jQuery.validator.classRuleSettings.street = {street: true};
-    
+
+    jQuery.validator.addMethod("phones", function(value, element)
+        {    return this.optional(element) || /^[0-9]{10,20}$/.test(value);
+        },     "Please enter a valid phone number")
+        jQuery.validator.classRuleSettings.phones = {phones: true};
+
     //validation
         $("#userform").validate({
     //Rules
@@ -64,7 +69,12 @@ $(document).ready(function(){
             required: true,
             minlength: 8,
             equalTo: "#password"
-            }
+            },
+        phone: {
+            required: true,
+            minlength: 10,
+            phones: true
+            },
         },
     
         
